@@ -1,0 +1,112 @@
+[
+    {
+        "itemID": 1,
+        "itemType": "Shoes",
+        "title": "Generic Shoe",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most normal shoes in the land",
+        "availability": true,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },
+    {
+        "itemID": 2,
+        "itemType": "Socks",
+        "title": "Generic Socks",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most normal shoes in the land",
+        "availability": true,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },
+    {
+        "itemID": 3,
+        "itemType": "Jeans",
+        "title": "Generic Jeans",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most normal shoes in the land",
+        "availability": true,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },
+    {
+        "itemID": 4,
+        "itemType": "Pants",
+        "title": "Generic Pants",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most normal shoes in the land",
+        "availability": true,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },
+    {
+        "itemID": 5,
+        "itemType": "Shirt",
+        "title": "Generic Shirt",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most normal shoes in the land",
+        "availability": true,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },
+    {
+        "itemID": 6,
+        "itemType": "Shorts",
+        "title": "Generic Shorts",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most normal shoes in the land",
+        "availability": true,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },
+    {
+        "itemID": 7,
+        "itemType": "Shoes",
+        "title": "Fancy Shoe",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most fancy shoes in the land",
+        "availability": true,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },    
+    {
+        "itemID": 8,
+        "itemType": "Pants",
+        "title": "Fancy Pants",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most fancy pants in the land",
+        "availability": true,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },   
+    {
+        "itemID": 9,
+        "itemType": "Shorts",
+        "title": "Fancy Shorts",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most fancy shorts in the land",
+        "availability": false,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    },    
+    {
+        "itemID": 10,
+        "itemType": "Shirt",
+        "title": "Fancy Shirt",
+        "price": 10,
+        "salePercent": 0,
+        "description": "The most fancy shirt in the land",
+        "availability": false,
+        "createdAt": 1651848557000,
+        "modifiedAt": 1651848557000
+    }
+]
