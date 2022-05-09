@@ -69,7 +69,7 @@ const serverlessConfiguration: AWS = {
   },
   resources: {
     Resources: {
-      TodosTable: {
+      ShopItemsData: {
         Type: 'AWS::DynamoDB::Table',
         Properties: {
           TableName: 'ShopItemsData',
