@@ -226,7 +226,7 @@ PLEASE COPY AND PASTE INTO POSTMAN IMPORT - SELECT RAWTEXT OR MAKE INTO JSON FIL
             }
 ##
 
-## Expanded Explanations ##
+# Expanded Explanations #
 ## Function (CreateShopItem) ##
  – A function that allows the user to create a Shop Item by passing in the following JSON params in body, Upon success, it will return the newly created ShopItem.
 
