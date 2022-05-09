@@ -7,4 +7,5 @@ module.exports = {
   testEnvironment: 'node',
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths /*, { prefix: '<rootDir>/' } */),
   modulePaths: ['<rootDir>'],
+  setupFiles: ["<rootDir>/.jest/setEnvVars.ts"]
 };
