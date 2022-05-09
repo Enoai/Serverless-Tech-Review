@@ -7,7 +7,12 @@ import { CreateShopItem, StoredShopItem } from 'src/model/shop_item';
 import ShopService from 'src/service/shop_service';
 import ExpandedError from '@libs/expanded_error';
 import {
-  createShopItemSchema, getAllShopItemsSchema, getShopItemSchema, deleteShopItemSchema, updateShopItemSchemaBody, updateShopItemSchemaqueryStringPara,
+  createShopItemSchema,
+  /* getAllShopItemsSchema , */
+  getShopItemSchema,
+  deleteShopItemSchema,
+  updateShopItemSchemaBody,
+  updateShopItemSchemaqueryStringPara,
 } from './schema';
 
 const createShopItemMethod: ValidatedEventAPIGatewayProxyEvent<typeof createShopItemSchema> = async (event) => {
@@ -46,7 +51,7 @@ const createShopItemMethod: ValidatedEventAPIGatewayProxyEvent<typeof createShop
   }
 };
 
-const getShopItemMethod: ValidatedEventAPIGatewayProxyEvent<typeof getShopItemSchema> = async (event) => {
+const getShopItemMethod: ValidatedEventAPIGatewayProxyEvent<null> = async (event) => {
   try {
     const checkSchema = validateSchema(getShopItemSchema, event);
     if (checkSchema.success === true) {
@@ -81,7 +86,7 @@ const getShopItemMethod: ValidatedEventAPIGatewayProxyEvent<typeof getShopItemSc
   }
 };
 
-const getAllShopItemsMethod: ValidatedEventAPIGatewayProxyEvent<typeof getAllShopItemsSchema> = async () => {
+const getAllShopItemsMethod: ValidatedEventAPIGatewayProxyEvent<null> = async () => {
   try {
     const shopItems = await new ShopService().getAllShopItems();
     return ReturnSuccessResult(200, {

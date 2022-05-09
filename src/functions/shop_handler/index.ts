@@ -1,6 +1,6 @@
 import { handlerPath } from '@libs/handler_resolver';
 import {
-  createShopItemSchema, getAllShopItemsSchema, getShopItemSchema, deleteShopItemSchema, updateShopItemSchemaBody,
+  createShopItemSchema, /* getAllShopItemsSchema ,  getShopItemSchema, */ deleteShopItemSchema, updateShopItemSchemaBody,
 } from './schema';
 
 export const createShopItem = {
@@ -29,11 +29,6 @@ export const getAllShopItems = {
       http: {
         method: 'get',
         path: 'getAllShopitems',
-        request: {
-          schemas: {
-            'application/json': getAllShopItemsSchema,
-          },
-        },
       },
     },
   ],
@@ -47,11 +42,6 @@ export const getShopItem = {
       http: {
         method: 'get',
         path: 'getShopItem',
-        request: {
-          schemas: {
-            'application/json': getShopItemSchema,
-          },
-        },
       },
     },
   ],
