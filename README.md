@@ -12,10 +12,11 @@
 ## START UP ##
     1. Run the following command – “ npm i “
     2. Run the following command – “ npm install -g serverless” ** OPTIONAL – only required if you do not already have it installed”
-    Once done, you are now able to start up serverless in offline mode.
-    3. Run command – “npm start”
-    4. Once completed, you should be displayed the following and are now able to run this API locally, this API comes pre-filled with some seeded data to instantly start working on it / messing around on it.
-    5. Once running, you are now also able to run some Jest TESTS via a 2nd command termnial, once open run the following command ---- "npm test"
+    Once done, you are now able to start up serverless in ONLINE mode.
+    3. -- IF YOU WANT TO USE OFFLINE MODE, PLEASE GO TO THE OFFLINE MODE SECTION BELOW --
+    4. Run command – “npm start”
+    5. Once completed, you should be displayed the following and are now able to run this API locally, this API comes pre-filled with some seeded data to instantly start working on it / messing around on it.
+    6. Once running, you are now also able to run some Jest TESTS via a 2nd command termnial, once open run the following command ---- "npm test"
     
 ![image](https://user-images.githubusercontent.com/29772947/167320181-c5dab7b9-48a2-42ec-b1f9-ed7d81cfa03b.png)
 
@@ -226,6 +227,17 @@ PLEASE COPY AND PASTE INTO POSTMAN IMPORT - SELECT RAWTEXT OR MAKE INTO JSON FIL
             }
 ##
 
+#########################################################################
+# HOW DO I GO OFFLINE MODE? #
+
+      1. Open - serverless.ts
+      2. Change the value of "IS_OFFLINE_MODE" from "0" --> "1";
+      
+      IMAGE REFERNCE BELOW
+![image](https://user-images.githubusercontent.com/29772947/167502464-5d7b88c3-7188-4628-a2e2-0e0cc5e0d176.png)
+
+
+#########################################################################
 # Expanded Explanations #
 ## Function (CreateShopItem) ##
  – A function that allows the user to create a Shop Item by passing in the following JSON params in body, Upon success, it will return the newly created ShopItem.
