@@ -14,8 +14,9 @@ const serverlessConfiguration: AWS = {
       shouldStartNameWithService: true,
     },
     environment: {
-      AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
+      AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1', // keeps alive TCP connections
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
+      IS_OFFLINE_MODE: '0', // 1 = offline --- 0 = online(aws)
     },
     iam: { // Limits what these lambda's can do.
       role: {

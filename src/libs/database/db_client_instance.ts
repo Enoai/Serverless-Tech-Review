@@ -1,6 +1,5 @@
 import * as AWS from 'aws-sdk';
 import { DocumentClient } from 'aws-sdk/clients/dynamodb';
-
 /**
  * Sets up a connection to dynamoDB
  * Depending upon enviroment variable - local_offline
@@ -9,8 +8,7 @@ import { DocumentClient } from 'aws-sdk/clients/dynamodb';
  * @returns {DocumentClient} - Returns active connection to our databases.
  */
 const dynamoDBClient = (): DocumentClient => {
-  // if (process.env.LOCAL_OFFLINE) {
-  if (true) {
+  if (process.env.IS_OFFLINE_MODE === '1') {
     return new AWS.DynamoDB.DocumentClient({
       region: 'localhost',
       endpoint: 'http://localhost:5000',
@@ -21,5 +19,4 @@ const dynamoDBClient = (): DocumentClient => {
 };
 
 const client = dynamoDBClient();
-
 export default client;
