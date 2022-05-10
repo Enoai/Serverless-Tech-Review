@@ -1,1 +1,1 @@
-process.env.IS_OFFLINE_MODE = '0' // 1 = offline --- 0 = online(aws)
+process.env.IS_OFFLINE_MODE = '1' // 1 = offline --- 0 = online(aws)
