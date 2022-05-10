@@ -232,9 +232,15 @@ PLEASE COPY AND PASTE INTO POSTMAN IMPORT - SELECT RAWTEXT OR MAKE INTO JSON FIL
 
       1. Open - serverless.ts
       2. Change the value of "IS_OFFLINE_MODE" from "0" --> "1";
+      3. JEST RELATED --
+      4. Go into .Jest/setEnvVars
+      5 Change the value fo "IS_OFFLINE_MODE" from "0" --> "1";
       
       IMAGE REFERNCE BELOW
 ![image](https://user-images.githubusercontent.com/29772947/167502464-5d7b88c3-7188-4628-a2e2-0e0cc5e0d176.png)
+
+![image](https://user-images.githubusercontent.com/29772947/167581104-3283348a-5ebe-42a0-bd50-d53d229ad277.png)
+
 
 
 #########################################################################
