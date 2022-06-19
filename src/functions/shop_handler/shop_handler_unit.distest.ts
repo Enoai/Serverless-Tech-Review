@@ -19,7 +19,7 @@ describe('ShopHandler-Service -- Unit Tests', () => {
     // eslint-disable-next-line global-require
     AWSMock.setSDKInstance(require('aws-sdk'));
   });
-  jest.setTimeout(100000);
+
   //   describe('Get Shop Item -- Unit Test', () => {
   //     it('should mock getItem from DynamoDB', async () => {
   //       const expectedResult:StoredShopItem = {

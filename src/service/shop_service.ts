@@ -91,7 +91,7 @@ export default class ShopService {
     return updateEntryResult;
   }
 
-  async deleteShopItem(itemType: string, itemID: number): Promise<any> {
+  async deleteShopItem(itemType: string, itemID: number): Promise<void> {
     try {
       await dynamoDBClient.delete({
         TableName: this.ShopItemsStorageTableName,

@@ -20,5 +20,6 @@ module.exports = {
     'linebreak-style': 0,
     'max-len': [2, 150],
     'import/prefer-default-export': 0,
+    "@typescript-eslint/no-explicit-any": "error",
   },
 };
